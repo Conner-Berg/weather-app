@@ -1,6 +1,7 @@
 :root {
 	--darkmode-bg-color: #222;
 	--darkmode-text-color: #eee;
+	--darkmode-border: 1px solid #eee;
 	--default-spacing: 5px;
 }
 
@@ -13,6 +14,7 @@ body {
 
 .flex-main {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
@@ -31,5 +33,20 @@ body {
 	color: var(--darkmode-text-color);
 	padding: var(--default-spacing);
 	margin: var(--default-spacing);
-	border: 1px solid #eee;
+	border: var(--darkmode-border);
+}
+
+.output-buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.weather-output {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	padding: 10px;
 }
